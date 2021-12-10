@@ -2,7 +2,21 @@
   text-align: center;
 }
 .Header {
-  color: #443e3e;
+  color: #000055;
   text-shadow: 1px 1px 5px #fff;
+  }
+.App img{
+  width: 90%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  object-fit: contain; 
+   /* display: flex;
+    align-content: center;
+    align-items: center;
+    flex-direction: column; */
+    padding: 1%;
+    /* border: 2px solid #000055; */
+    margin: 1%;
 }
 /* write your parent styles in here for your App.js */

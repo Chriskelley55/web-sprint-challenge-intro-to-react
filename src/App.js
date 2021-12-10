@@ -2,6 +2,7 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import './App.css';
 import Character from './components/Character';
+import logoTwo from './images/logoTwo.png'
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
@@ -20,12 +21,13 @@ const App = () => {
     })
     .catch(err => console.log(err))
   },[])
-console.log(characters)
+// console.log(characters)
 
   return (
     <div className="App">
-      <h1 className="Header">Characters</h1>
+      <h1 className="Header">Star Wars</h1>
       {characters.map(character => <Character character={character} key={character.name}/>)}
+      <img src={logoTwo} alt="Disney, Pixar, Marvel, Star Wars, Nat Geo" />
     </div>
   );
 }
